@@ -13,7 +13,7 @@
     "start": "node dist/index.js",
     "setup:deps": "node dist/setup.js",
     "typecheck": "tsc --noEmit",
-    "test": "npm run typecheck && vitest run"
+    "test": "pnpm typecheck && vitest run"
   },
   "engines": {
     "node": ">=18"

@@ -5,11 +5,11 @@ Local stdio MCP server. Claude writes a cheesy talk-show transcript (host + co-h
 ## Setup
 
 ```powershell
-npm install
-npm run build
+pnpm install
+pnpm build
 ```
 
-Piper and voices download automatically on first use (or run `npm run setup:deps`, or call the `setup_podcast_dependencies` tool). They are stored in `vendor/`.
+Piper and voices download automatically on first use (or run `pnpm setup:deps`, or call the `setup_podcast_dependencies` tool). They are stored in `vendor/`.
 
 Register globally:
 
