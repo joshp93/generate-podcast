@@ -1,0 +1,33 @@
+{
+  "name": "generate-podcast-mcp",
+  "version": "1.0.0",
+  "description": "Local stdio MCP server that turns a two-host talk-show transcript into podcast audio using Piper TTS.",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "generate-podcast-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "setup:deps": "node dist/setup.js",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run typecheck && vitest run"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@breezystack/lamejs": "1.2.7",
+    "@modelcontextprotocol/sdk": "1.31.0",
+    "adm-zip": "0.6.1",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@types/adm-zip": "0.5.8",
+    "@types/node": "26.6.3",
+    "typescript": "7.0.2",
+    "vitest": "5.0.2"
+  }
+}
